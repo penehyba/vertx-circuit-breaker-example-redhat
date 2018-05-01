@@ -111,3 +111,6 @@ nbactions.xml
 
 *.log
 integration-tests/.openshiftio/
+
+.vscode
+.project
