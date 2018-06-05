@@ -400,7 +400,7 @@
         <dependency>
             <groupId>io.openshift.booster</groupId>
             <artifactId>greeting-service</artifactId>
-            <version>11-SNAPSHOT</version>
+            <version>12-SNAPSHOT</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -411,7 +411,7 @@
         <dependency>
             <groupId>io.openshift.booster</groupId>
             <artifactId>name-service</artifactId>
-            <version>11-SNAPSHOT</version>
+            <version>12-SNAPSHOT</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -488,7 +488,7 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-auth-common</artifactId>
-            <version>3.5.1.redhat-003</version>
+            <version>3.5.1.redhat-004</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -503,7 +503,7 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-bridge-common</artifactId>
-            <version>3.5.1.redhat-003</version>
+            <version>3.5.1.redhat-004</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -518,7 +518,7 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-circuit-breaker</artifactId>
-            <version>3.5.1.redhat-003</version>
+            <version>3.5.1.redhat-004</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -533,7 +533,7 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-core</artifactId>
-            <version>3.5.1.redhat-003</version>
+            <version>3.5.1.redhat-004</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -563,7 +563,7 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-unit</artifactId>
-            <version>3.5.1.redhat-003</version>
+            <version>3.5.1.redhat-004</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -578,7 +578,7 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-web</artifactId>
-            <version>3.5.1.redhat-003</version>
+            <version>3.5.1.redhat-004</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -593,7 +593,7 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-web-client</artifactId>
-            <version>3.5.1.redhat-003</version>
+            <version>3.5.1.redhat-004</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -608,7 +608,7 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-web-common</artifactId>
-            <version>3.5.1.redhat-003</version>
+            <version>3.5.1.redhat-004</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
