@@ -7,7 +7,7 @@
   <parent>
     <groupId>io.openshift</groupId>
     <artifactId>booster-parent</artifactId>
-    <version>21</version>
+    <version>22</version>
   </parent>
 
   <groupId>io.openshift.booster</groupId>
@@ -64,13 +64,13 @@
     <dependency>
       <groupId>org.assertj</groupId>
       <artifactId>assertj-core</artifactId>
-      <version>3.8.0</version>
+      <version>3.10.0</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>io.rest-assured</groupId>
       <artifactId>rest-assured</artifactId>
-      <version>3.0.5</version>
+      <version>3.1.0</version>
       <scope>test</scope>
     </dependency>
 
@@ -89,7 +89,7 @@
     <dependency>
       <groupId>io.fabric8</groupId>
       <artifactId>openshift-client</artifactId>
-      <version>3.1.10</version>
+      <version>3.1.12</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
