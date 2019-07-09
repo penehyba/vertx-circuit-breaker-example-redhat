@@ -110,7 +110,7 @@ nbactions.xml
 .nb-gradle/
 
 *.log
-integration-tests/.openshiftio/
+integration-tests/.openshift/
 
 .vscode
 .project
