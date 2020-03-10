@@ -1,7 +1,6 @@
 package io.openshift.example;
 
 import io.vertx.circuitbreaker.CircuitBreakerOptions;
-import io.vertx.core.Handler;
 import io.vertx.core.json.JsonObject;
 import io.vertx.ext.web.client.WebClientOptions;
 import io.vertx.ext.web.handler.sockjs.BridgeOptions;
@@ -44,7 +43,7 @@ public class GreetingServiceVerticle extends AbstractVerticle {
         Router router = Router.router(vertx);
 
         router.get("/health").handler(rc -> rc.response().end("OK"));
-        router.get("/eventbus/*").handler(getSockJsHandler());
+        router.mountSubRouter("/eventbus", getSockJsHandler());
         // The address is the circuit breaker notification address configured above.
         router.get("/metrics").handler(HystrixMetricHandler.create(vertx, "circuit-breaker"));
 
@@ -62,7 +61,7 @@ public class GreetingServiceVerticle extends AbstractVerticle {
     }
 
     private void greeting(RoutingContext rc) {
-        circuit.rxExecuteCommandWithFallback(
+        circuit.rxExecuteWithFallback(
             future ->
                 client.get("/api/name").rxSend()
                     .doOnEach(r -> System.out.println(r.getValue().bodyAsString()))
@@ -89,7 +88,7 @@ public class GreetingServiceVerticle extends AbstractVerticle {
             );
     }
 
-    private Handler<RoutingContext> getSockJsHandler() {
+    private Router getSockJsHandler() {
         SockJSHandler sockJSHandler = SockJSHandler.create(vertx);
         BridgeOptions options = new BridgeOptions();
         options.addInboundPermitted(
