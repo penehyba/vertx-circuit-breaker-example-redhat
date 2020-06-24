@@ -16,12 +16,12 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>io.openshift.example</groupId>
+			<groupId>${project.groupId}</groupId>
 			<artifactId>name-service</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>io.openshift.example</groupId>
+			<groupId>${project.groupId}</groupId>
 			<artifactId>greeting-service</artifactId>
 			<version>${project.version}</version>
 		</dependency>
